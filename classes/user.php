@@ -12,6 +12,13 @@ class user implements UserInterface
     }
 
 
+    public function getRequest($request)
+    {
+        $this -> request = $request;
+    }
 
-
+    public function parseRequest()
+    {
+        var_dump($this->request);
+    }
 }
